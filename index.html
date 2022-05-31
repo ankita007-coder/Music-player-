@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <script
+      src="https://kit.fontawesome.com/2d9b67a497.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Music Player</title>
+  </head>
+
+  <body>
+    <!--this is for navigation bar-->
+    <header>
+      <nav class="navigation">
+        <div class="logo">
+        <img src="images/logo.png" />
+        </div>
+        <div class="fav">
+          <a href="">Favourites</a>
+        </div>
+        <div class="search-bar">
+          <div class="search-icon">
+            <i class="fas fa-search search-ico"></i>
+          </div>
+
+          <input type="text" placeholder="Search.." />
+          <div class="mic">
+            <!-- mic icon -->
+            <i class="fas fa-microphone mic-ico"></i>
+          </div>
+        </div>
+        <div class="notification">
+          <div class="red-dot"></div>
+          <i class="fas fa-solid fa-bell" style="color: aliceblue;"></i>
+        </div>
+        <div class="profile">
+          <img src="images/profile.webp" alt="profile" />
+        </div>
+      </nav>
+    </header>
+    <!--the main body starts with the definition of two asides-->
+    <!--first aside-->
+    <main>
+      <aside class="aside part-1">
+        <!--designing a carousel-->
+        <div class="carousel-container">
+          <div class="carousel">
+            <img src="images/slide1.jpg" alt="slide-1" />
+            <img src="images/slide2.jpg" alt="slide-2" />
+            <img src="images/slide3.jpg" alt="slide-3" />
+          </div>
+        </div>
+        <!--latest release section-->
+        <div class="latest">
+          <h2>
+            Latest Release
+          </h2>
+          <!--contains the latest released songs-->
+          <!--will contain 4 cards-->
+          <!--first card-->
+          <div class="latest-content">
+            <div class="card">
+              <div>
+                <!-- image corresponding to the card -->
+                <img src="images/latest/latest1.jpg" />
+                <!-- play button, which will be shown on hover on the card image -->
+                <div class="play-button">
+                  <i class="fas fa-play" style="display: inline-block;"></i>
+                </div>
+              </div>
+              <div class="song-description">
+                <h3>
+                  Light Switch
+                </h3>
+                
+                <p>Jan, 2022 <span class="song-duration"> 3:09</span></p>
+                 
+              </div>
+              <!--dropdown list-->
+              <div class="option-list">
+                <label for="latest-release-checkbox"
+                  ><i class="fas fa-ellipsis-h"></i
+                ></label>
+                <input type="checkbox" id="latest-release-checkbox" />
+                <div class="latest-dropdown">
+                  <div class="drop-item">
+                    <p>
+                      <i class="fas fa-play-circle"></i>&nbsp;
+                      <a href="">Play Now</a>
+                    </p>
+                  </div>
+                  <hr>
+      
+                  <div class="drop-item">
+                    <p><i class="fas fa-list-ul"></i>&nbsp; Add to Queue</p>
+                  </div>
+                  <hr>
+                  <div class="drop-item">
+                    <p>
+                        <p><i class="fas fa-music"></i>&nbsp; Add to playlist</p>
+                    </p>
+                  </div>
+                  <hr>
+                  <div class="drop-item">
+                      <p><i class="fas fa-info-circle"></i>&nbsp; Get Info</p>
+                  </div>
+                </div>
+              </div>
+                          
+            </div>
+            <!--second card-->
+            <div class="card">
+              <div>
+                <!-- image corresponding to the card -->
+                <img src="images/latest/latest2.jpg" />
+                <!-- play button, which will be shown on hover on the card image -->
+                <div class="play-button">
+                  <i class="fas fa-play" style="display: inline-block;"></i>
+                </div>
+              </div>
+              <div class="song-description">
+                  <h3>
+                    Bussin
+                  </h3>
+                  
+                  <p>Jan, 2022 <span class="song-duration"> 3:09</span></p>
+                   
+                </div>
+              <div class="option-list">
+                  <label for="latest-release-checkbox"
+                    ><i class="fas fa-ellipsis-h"></i
+                  ></label>
+                  <input type="checkbox" id="latest-release-checkbox1" />
+                  <div class="latest-dropdown">
+                    <div class="drop-item">
+                      <p>
+                        <i class="fas fa-play-circle"></i>&nbsp;
+                        <a href="">Play Now</a>
+                      </p>
+                    </div>
+                    <hr>
+        
+                    <div class="drop-item">
+                      <p><i class="fas fa-list-ul"></i>&nbsp; Add to Queue</p>
+                    </div>
+                    <hr>
+                    <div class="drop-item">
+                      <p>
+                          <p><i class="fas fa-music"></i>&nbsp; Add to playlist</p>
+                      </p>
+                    </div>
+                    <hr>
+                    <div class="drop-item">
+                        <p><i class="fas fa-info-circle"></i>&nbsp; Get Info</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!--third card-->
+            <div class="card">
+              <div>
+                <!-- image corresponding to the card -->
+                <img src="images/latest/latest3.jpg" />
+                <!-- play button, which will be shown on hover on the card image -->
+                <div class="play-button">
+                  <i class="fas fa-play" style="display: inline-block;"></i>
+                </div>
+              </div>
+              <div class="song-description">
+                <h3>
+                  Peaches
+                </h3>
+                <p>Mar, 2021 <span class="song-duration">3:18</span></p>
+              </div>
+              <div class="option-list">
+                  <label for="latest-release-checkbox"
+                    ><i class="fas fa-ellipsis-h"></i
+                  ></label>
+                  <input type="checkbox" id="latest-release-checkbox2" />
+                  <div class="latest-dropdown">
+                    <div class="drop-item">
+                      <p>
+                        <i class="fas fa-play-circle"></i>&nbsp;
+                        <a href="">Play Now</a>
+                      </p>
+                    </div>
+                    <hr>
+        
+                    <div class="drop-item">
+                      <p><i class="fas fa-list-ul"></i>&nbsp; Add to Queue</p>
+                    </div>
+                    <hr>
+                    <div class="drop-item">
+                      <p>
+                          <p><i class="fas fa-music"></i>&nbsp; Add to playlist</p>
+                      </p>
+                    </div>
+                    <hr>
+                    <div class="drop-item">
+                        <p><i class="fas fa-info-circle"></i>&nbsp; Get Info</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!--fourth card-->
+        <div class="card">
+              <div>
+                <!-- image corresponding to the card -->
+                <img src="images/latest/latest4.jpg" />
+                <!-- play button, which will be shown on hover on the card image -->
+                <div class="play-button">
+                  <i class="fas fa-play" style="display: inline-block;"></i>
+                </div>
+              </div>
+              <div class="song-description">
+                <h3>
+                  Willow
+                </h3>
+                <p>Nov, 2021 <span class="song-duration"> 4:07</span></p>
+              </div>
+              <div class="option-list">
+                  <label for="latest-release-checkbox3"
+                    ><i class="fas fa-ellipsis-h"></i
+                  ></label>
+                  <input type="checkbox" id="latest-release-checkbox" />
+                  <div class="latest-dropdown">
+                    <div class="drop-item">
+                      <p>
+                        <i class="fas fa-play-circle"></i>&nbsp;
+                        <a href="">Play Now</a>
+                      </p>
+                    </div>
+                    <hr>
+        
+                    <div class="drop-item">
+                      <p><i class="fas fa-list-ul"></i>&nbsp; Add to Queue</p>
+                    </div>
+                    <hr>
+                    <div class="drop-item">
+                      <p>
+                          <p><i class="fas fa-music"></i>&nbsp; Add to playlist</p>
+                      </p>
+                    </div>
+                    <hr>
+                    <div class="drop-item">
+                        <p><i class="fas fa-info-circle"></i>&nbsp; Get Info</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--end of latest release-->
+        <!--beginning of popular artist-->
+        <div class="popular-artists">
+          <h2>Popular Artists</h2>
+          <!--on clicking the name or image of the artist the user will be directed 
+          to single playlist screen page-->
+          <div class="popular-content">
+            <!--first artist-->
+            <a href="singleplaylist.html">
+            <img src="images/popular/pop0.jpg" alt="">
+            <p>Charlie Puth</p>
+          </a>
+          <!--second artist-->
+          <a href="singleplaylist.html">
+              <img src="images/popular/pop1.jpg" alt="">
+              <p>Alan Walker</p>
+            </a>
+            <!--third artist-->
+            <a href="singleplaylist.html">
+                <img src="images/popular/pop2.jpg" alt="">
+                <p>Justin Bieber</p>
+              </a>
+              <!--fourth artist-->
+              <a href="singleplaylist.html">
+                  <img src="images/popular/pop3.jpg" alt="">
+                  <p>Taylor Swift</p>
+                </a>
+                <!--fifth artist-->
+                <a href="singleplaylist.html">
+                    <img src="images/popular/pop4.jpg" alt="">
+                    <p>Ariana Grande</p>
+                  </a>
+                  <!--sixth artist-->
+                  <a href="singleplaylist.html">
+                      <img src="images/popular/pop5.jpg" alt="">
+                      <p>Selena Gomez</p>
+                    </a>
+                    <!--seventh artist-->
+                    <a href="singleplaylist.html">
+                        <img src="images/popular/pop6.jpg" alt="">
+                        <p>Billie Eilish</p>
+                      </a>
+          </div>
+        </div>
+        <!--end of popular artist-->
+        <!--beginning of music theme-->
+        <!--music theme-1-->
+        <div class="music-theme">
+        <div class="station">
+        <div id="box-1">
+          <div id="box-2">
+            <div id="box-3">
+              <img src="images/logo.png" alt="">
+              <p>Stations</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="theme-main">
+          <!--theme 1-->
+        <div class="music-theme-content">
+          <img src="images/theme/theme.jpg" alt="">
+          <p>Love</p>
+        </div>
+        <!--theme 2-->
+        <div class="music-theme-content">
+            <img src="images/theme/theme1.jpg" alt="">
+            <p>Retro</p>
+          </div>
+          <!--theme 3-->
+          <div class="music-theme-content">
+              <img src="images/theme/theme2.jpg" alt="">
+              <p>Chill</p>
+            </div>
+            <!--theme 4-->
+            <div class="music-theme-content">
+                <img src="images/theme/theme3.jpg" alt="">
+                <p>Pop</p>
+              </div>
+              <!--theme 5-->
+              <div class="music-theme-content">
+                  <img src="images/theme/theme4.jpg" alt="">
+                  <p>Workout</p>
+                </div>
+                <!--theme 6-->
+                <div class="music-theme-content">
+                    <img src="images/theme/theme5.jpg" alt="">
+                    <p>Rock</p>
+                  </div>
+                </div>
+      </div>
+      <!--end of first music theme section-->
+      <!--this is another theme music section-->
+      <div class="music-theme2">
+        <div class="image-cont">
+
+            <img src="images/theme/theme-1.jpg" alt="" srcset="">
+    <p>Electronic</p>
+        </div>
+        <div class="image-cont">
+    
+              <img src="images/theme/theme-2.jpg" alt="" srcset="">
+  <p>Road Trip</p>
+          </div>
+          <div class="image-cont">
+                <img src="images/theme/theme-3.jpg" alt="" srcset="">
+            <p>Party</p>
+            </div>
+      </div>
+      <!--latest songs based on languages-->
+      <div class="language-based">
+        <!--latest songs in english-->
+          <h2>Latest English</h2>
+        <div class="latest-eng">
+          
+          <div class="latest-eng-content">
+            <img src="images/latest/latest1.jpg" alt="" srcset="">
+             <p>Light Switch<br>Jan,2022</p>
+
+          </div>
+          <div class="latest-eng-content">
+              <img src="images/latest/latest2.jpg" alt="" srcset="">
+               <p>Celebrity Skin<br>Feb,2022</p>
+  
+            </div>
+            <div class="latest-eng-content">
+                <img src="images/latest/latest3.jpg" alt="" srcset="">
+                 <p>Peaches<br>Mar,2021</p>
+    
+              </div>
+              <div class="latest-eng-content">
+                  <img src="images/latest/latest5.jpg" alt="" srcset="">
+                   <p>Bussin<br>Feb,2022</p>
+      
+                </div>
+                <div class="latest-eng-content">
+                    <img src="images/latest/latest4.jpg" alt="" srcset="">
+                     <p>Willow<br>Nov,2021</p>
+        
+                  </div>
+                  <div class="latest-eng-content">
+                      <img src="images/latest/latest6.jpg" alt="" srcset="">
+                       <p>26<br>Jan,2022</p>
+          
+                    </div>
+        </div>
+        <!--end of english song list-->
+        <!--latest hindi songs list-->
+        <h2>Latest Hindi</h2>
+        <div class="latest-eng">
+          
+          <div class="latest-eng-content">
+            <img src="images/latest/hindi/latest-hin1.jpg" alt="" srcset="">
+             <p>Doobey<br>Jan,2022</p>
+
+          </div>
+          <div class="latest-eng-content">
+              <img src="images/latest/hindi/latest-hin2.jpg" alt="" srcset="">
+               <p>Srivalli<br>Jan,2022</p>
+  
+            </div>
+            <div class="latest-eng-content">
+                <img src="images/latest/hindi/latest-hin3.jpg" alt="" srcset="">
+                 <p>Meri Tarah<br>Jan,2022</p>
+    
+              </div>
+              <div class="latest-eng-content">
+                  <img src="images/latest/hindi/latest-hin4.jpg" alt="" srcset="">
+                   <p>Sammi Sammi<br>Jan,2022</p>
+      
+                </div>
+                <div class="latest-eng-content">
+                    <img src="images/latest/hindi/latest-hin5.jpg" alt="" srcset="">
+                     <p>Suna Hai<br>Oct,2021</p>
+        
+                  </div>
+                  <div class="latest-eng-content">
+                      <img src="images/latest/hindi/latest-hin6.jpg" alt="" srcset="">
+                       <p>Jugnu<br>Oct,2021</p>
+          
+                    </div>
+        </div>
+      </div>
+      <!--end of hindi songs-->
+      </aside>
+      <!--this marks the end of one aside and from here the other aside will start-->
+      <!--in order to make the page responsive this other side will reduce to more button for smaller screens-->
+      <label for="more"><i class="fas fa-angle-double-left"></i>More</label>
+      <!--the label is declared to mark More for the checkbox...the checkbox will remain hidden the whole time-->
+      <input type="checkbox" id="more">
+      <!--the second aside part is declared-->
+      <div class="aside part-2">
+        <div class="heading">
+           <!--the heading of this side-->
+          <h2>
+            My Playlist</h2>
+            <h4>
+                <a href="#queue-option-box">Queue <i class="fas fa-chevron-circle-down"></i></a>
+            </h4>
+          <!--this is the queue which when clicked will show options for playlists fav settings-->
+
+
+          <div class="queue-options" id="queue-option-box">
+              <p><a href style="font-weight:bolder;">Playlists</a></p>
+              <hr>
+              <p><a href style="font-weight:bolder;">Favourite songs</a></p>
+              <hr>
+              <p><a href="#" style="color:red; font-weight:bolder;">Close</a></p>
+
+          </div>
+        </div>
+        <div class="playlist-content">
+          <!--first item of the playlist-->
+          <div class="playlist-item">
+            <div class="left-content">
+              <div class="numbering">
+                01
+              </div>
+              <div class="cover">
+                  <!-- cover class is for those items which when hovered will show an effect -->
+                  <!-- in this effect, when the user hovers on the item, it will show blur background -->
+                  <!-- with opacity value less than 1 and a play button icon at the center -->                                
+                  <img src="images/playlist/play-1.jpg">
+                  <div class="play">
+                      <i class="fas fa-play"></i>
+                  </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                
+                  <p>
+                    Alone<br>
+                      Alan Walker
+                  </p>
+              </div>
+          </div>
+          <!-- like button -->
+          <div class="right-content">
+            <i class="fas fa-solid fa-heart"></i>
+          </div>
+
+          
+        </div>
+        <!--second item of the playlist-->
+        <div class="playlist-item">
+          <div class="left-content">
+            <div class="numbering">
+              02
+            </div>
+            <div class="cover">
+                <!-- cover class is for those items which when hovered will show an effect -->
+                <!-- in this effect, when the user hovers on the item, it will show blur background -->
+                <!-- with opacity value less than 1 and a play button icon at the center -->                                
+                <img src="images/latest/latest1.jpg">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+            <!-- name and author of the song -->
+            <div>
+              
+                <p>
+                Light Switch<br>
+                    Charlie Puth
+                </p>
+            </div>
+        </div>
+        <!-- like button -->
+        <div class="right-content">
+          <i class="fas fa-solid fa-heart"></i>
+        </div>      
+      </div>
+  <!--third item of the playlist-->
+  <div class="playlist-item">
+    <div class="left-content">
+      <div class="numbering">
+        03
+      </div>
+      <div class="cover">
+          <!-- cover class is for those items which when hovered will show an effect -->
+          <!-- in this effect, when the user hovers on the item, it will show blur background -->
+          <!-- with opacity value less than 1 and a play button icon at the center -->                                
+          <img src="images/latest/latest3.jpg">
+          <div class="play">
+              <i class="fas fa-play"></i>
+          </div>
+      </div>
+      <!-- name and author of the song -->
+      <div>
+        
+          <p>
+        Peaches<br>
+            Justin Bieber
+          </p>
+      </div>
+  </div>
+  <!-- like button -->
+  <div class="right-content">
+    <i class="fas fa-solid fa-heart"></i>
+  </div>      
+</div>
+  <!--fourth item of the playlist-->
+  <div class="playlist-item">
+    <div class="left-content">
+      <div class="numbering">
+        04
+      </div>
+      <div class="cover">
+          <!-- cover class is for those items which when hovered will show an effect -->
+          <!-- in this effect, when the user hovers on the item, it will show blur background -->
+          <!-- with opacity value less than 1 and a play button icon at the center -->                                
+          <img src="images/playlist/play-2.png">
+          <div class="play">
+              <i class="fas fa-play"></i>
+          </div>
+      </div>
+      <!-- name and author of the song -->
+      <div>
+        
+          <p>
+          Attention<br>
+              Charlie Puth
+          </p>
+      </div>
+  </div>
+  <!-- like button -->
+  <div class="right-content">
+    <i class="fas fa-solid fa-heart"></i>
+  </div>      
+</div>
+  <!--fifth item of the playlist-->
+  <div class="playlist-item">
+    <div class="left-content">
+      <div class="numbering">
+        05
+      </div>
+      <div class="cover">
+          <!-- cover class is for those items which when hovered will show an effect -->
+          <!-- in this effect, when the user hovers on the item, it will show blur background -->
+          <!-- with opacity value less than 1 and a play button icon at the center -->                                
+          <img src="images/latest/latest6.jpg">
+          <div class="play">
+              <i class="fas fa-play"></i>
+          </div>
+      </div>
+      <!-- name and author of the song -->
+      <div>
+        
+          <p>
+          26<br>
+              Lauv
+          </p>
+      </div>
+  </div>
+  <!-- like button -->
+  <div class="right-content">
+    <i class="fas fa-solid fa-heart"></i>
+  </div>      
+</div>
+
+  <!--sixth item of the playlist-->
+  <div class="playlist-item">
+    <div class="left-content">
+      <div class="numbering">
+        06
+      </div>
+      <div class="cover">
+          <!-- cover class is for those items which when hovered will show an effect -->
+          <!-- in this effect, when the user hovers on the item, it will show blur background -->
+          <!-- with opacity value less than 1 and a play button icon at the center -->                                
+          <img src="images/latest/latest4.jpg">
+          <div class="play">
+              <i class="fas fa-play"></i>
+          </div>
+      </div>
+      <!-- name and author of the song -->
+      <div>
+        
+          <p>
+          Willow<br>
+              Taylor Swift
+          </p>
+      </div>
+  </div>
+  <!-- like button -->
+  <div class="right-content">
+    <i class="fas fa-solid fa-heart"></i>
+  </div>      
+</div>
+
+  <!--seventh item of the playlist-->
+  <div class="playlist-item">
+    <div class="left-content">
+      <div class="numbering">
+        07
+      </div>
+      <div class="cover">
+          <!-- cover class is for those items which when hovered will show an effect -->
+          <!-- in this effect, when the user hovers on the item, it will show blur background -->
+          <!-- with opacity value less than 1 and a play button icon at the center -->                                
+          <img src="images/latest/hindi/latest-hin5.jpg">
+          <div class="play">
+              <i class="fas fa-play"></i>
+          </div>
+      </div>
+      <!-- name and author of the song -->
+      <div>
+        
+          <p>
+          Suna Hai<br>
+          Jubin Nautiyal
+          </p>
+      </div>
+  </div>
+  <!-- like button -->
+  <div class="right-content">
+    <i class="fas fa-solid fa-heart"></i>
+  </div>      
+</div>
+  <!--eighth item of the playlist-->
+  <div class="playlist-item">
+    <div class="left-content">
+      <div class="numbering">
+        08
+      </div>
+      <div class="cover">
+          <!-- cover class is for those items which when hovered will show an effect -->
+          <!-- in this effect, when the user hovers on the item, it will show blur background -->
+          <!-- with opacity value less than 1 and a play button icon at the center -->                                
+          <img src="images/latest/latest2.jpg">
+          <div class="play">
+              <i class="fas fa-play"></i>
+          </div>
+      </div>
+      <!-- name and author of the song -->
+      <div>
+        
+          <p>
+          Celebrity Skin<br>
+              Doja Cat
+          </p>
+      </div>
+  </div>
+  <!-- like button -->
+  <div class="right-content">
+    <i class="fas fa-solid fa-heart"></i>
+  </div>      
+</div>
+  <!--ninth item of the playlist-->
+  <div class="playlist-item">
+    <div class="left-content">
+      <div class="numbering">
+        09
+      </div>
+      <div class="cover">
+          <!-- cover class is for those items which when hovered will show an effect -->
+          <!-- in this effect, when the user hovers on the item, it will show blur background -->
+          <!-- with opacity value less than 1 and a play button icon at the center -->                                
+          <img src="images/latest/hindi/latest-hin1.jpg">
+          <div class="play">
+              <i class="fas fa-play"></i>
+          </div>
+      </div>
+      <!-- name and author of the song -->
+      <div>
+        
+          <p>
+          Doobey<br>
+              Lothika
+          </p>
+      </div>
+  </div>
+  <!-- like button -->
+  <div class="right-content">
+    <i class="fas fa-solid fa-heart"></i>
+  </div>      
+</div>
+  <!--tenth item of the playlist-->
+  <div class="playlist-item">
+    <div class="left-content">
+      <div class="numbering">
+        10
+      </div>
+      <div class="cover">
+          <!-- cover class is for those items which when hovered will show an effect -->
+          <!-- in this effect, when the user hovers on the item, it will show blur background -->
+          <!-- with opacity value less than 1 and a play button icon at the center -->                                
+          <img src="images/latest/hindi/latest-hin3.jpg">
+          <div class="play">
+              <i class="fas fa-play"></i>
+          </div>
+      </div>
+      <!-- name and author of the song -->
+      <div>
+        
+          <p>
+          Meri Tarah<br>
+              Jubin Nautiyal & Payal Dev
+          </p>
+      </div>
+  </div>
+  <!-- like button -->
+  <div class="right-content">
+    <i class="fas fa-solid fa-heart"></i>
+  </div>      
+</div>
+
+      </div>  
+    <aside>
+      
+    </aside>
+    </main>
+    <!--end of the main page-->
+    <!--the bottom of the page containing the music player-->
+    <footer>
+      <!--the left content contains the music cover of the song
+      and the name of the song and artist-->
+      <div class="footer-left-content">
+        <div>
+        <img src="images/playlist/play-1.jpg">
+        </div>
+        <div class="active-song-desc">
+          <p>Alone<br>Alan Walker</p>
+        </div>
+      </div>
+      <!--this division contains the heart and ban icon-->
+      <div class="like-ban">
+          <span class="like">
+              <i class="fas fa-solid fa-heart"></i>
+          </span>
+          <span class="ban">
+              <i class="fas fa-ban"></i>
+          </span>
+
+        </div>
+        <!--this part contain the music player and controls-->  
+        <div class="music-player">
+          <div class="controls">
+              <div><i class="fas fa-random"></i></div>
+              <div><i class="fas fa-step-backward"></i></div>
+              <div><i class="fas fa-pause-circle"></i></div>
+              <div><i class="fas fa-step-forward"></i></div>
+              <div><i class="fas fa-redo"></i></div>
+          </div>
+          <div class="music-slider">
+            <div class="initial">
+              0:17
+            </div>
+            <div class="slidercontainer">
+              <input type="range" name="" id="slider" min="0" max="100">
+            </div>
+            <div class="final">
+              2:40
+            </div>
+          </div>
+        </div>
+          <div class="extras">
+            <div>
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div>
+                <i class="fas fa-laptop"></i>
+            </div>
+            <div>
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="slidecontainer" style="width:30%;">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+            </div>            
+          </div>
+          <div class="expand">
+            <i class="fas fa-expand-alt"></i>
+        </div>
+            </footer>
+  </body>
+
+  <script src="script.js"></script>
+</html>

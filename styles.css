@@ -1,0 +1,792 @@
+/*padding and margin of the body is made 0 to avoid the gap*/
+/*the colour theme for my music player is black and green which would
+ make the website look energetic*/
+body {
+  background-color: rgb(27, 26, 26);
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+/*styling the headings*/
+h2,
+h3 {
+  color: chartreuse;
+}
+a {
+  text-decoration: none;
+}
+/*width of the logo is assigned*/
+.logo img {
+  width: 20%;
+}
+
+/*link property*/
+.fav a {
+  color: chartreuse;
+  text-decoration: none;
+}
+/*this will make the navigation bar flexible*/
+nav {
+  height: auto;
+  width: auto;
+  margin-top: 20px;
+  background-image: linear-gradient(180deg, black, rgba(0, 0, 0, 0));
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: all ease-in-out 1s;
+}
+.navigation > div {
+  display: inline-block;
+}
+.search-bar {
+  width: 30%;
+  position: relative;
+  margin-right: 10px;
+}
+/* changing the default style of the input bar */
+.search-bar input {
+  width: 100%;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+  font-weight: 500;
+  text-align: center;
+  transition: all ease-in-out 0.1s;
+}
+.search-icon {
+  display: inline-block;
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  color: chartreuse;
+  padding: 5px;
+}
+.mic {
+  display: inline-block;
+  position: absolute;
+  right: 0%;
+  top: 10%;
+  color: chartreuse;
+  padding: 5px;
+}
+.notification {
+  padding: 10px;
+  font-size: 1.5rem;
+  animation-name: notify;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 10s;
+}
+.red-dot {
+  border-radius: 50%;
+  border: 4px solid red;
+  z-index: 4;
+  margin-left: 10px;
+  position: absolute;
+  display: inline-block;
+}
+/*the animation for notification bell*/
+@keyframes notify {
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+/*profile image*/
+.profile img {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  border-radius: 100%;
+  top: 10%;
+}
+/*end of navigation - bar*/
+
+/*now defining one aside*/
+/*main is defined for separating both aside sections*/
+main {
+  width: 100%;
+  padding: 0% 3%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  transition: all ease-in-out 1s;
+}
+
+.aside {
+  display: inline-block;
+  overflow: hidden;
+}
+/*the first part of aside has been alloted more space*/
+.part-1 {
+  width: 65%;
+  height: 78vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.part-1::-webkit-scrollbar {
+  display: none;
+}
+.part-2 {
+  width: 30%;
+  height: 78vh;
+}
+/*carousel container*/
+.carousel-container {
+  position: relative;
+  margin-top: 5%;
+  height: 400px;
+}
+/*defining carousel */
+.carousel {
+  position: absolute;
+  left: 3%;
+  width: 70%;
+  padding: 10px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  overflow: visible;
+  justify-content: space-around;
+}
+/*common property for all the three images*/
+.carousel img {
+  width: 30vw;
+  height: 35vh;
+  transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+}
+/*positiong of first image of the carousel*/
+.carousel img:nth-child(1) {
+  position: relative;
+  left: 45vw;
+  z-index: 2;
+}
+/*positiong of second image of the carousel*/
+.carousel img:nth-child(2) {
+  transform: scale(1.2);
+  z-index: 3;
+}
+/*positiong of third image of the carousel*/
+.carousel img:nth-child(3) {
+  position: relative;
+  right: 45vw;
+  z-index: 1;
+}
+/*giving hover effect to the carousel*/
+.carousel img:hover {
+  width: 35vw;
+  box-shadow: 0 4px 8px 0 yellowgreen;
+  z-index: 4;
+  transition: 0.5s;
+}
+.carousel img:nth-child(2n + 1):hover {
+  transform: scale(1.3);
+}
+.latest {
+  position: relative;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.latest-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.latest-content > div {
+  border: 1px solid yellowgreen;
+  height: 100px;
+  width: 40%;
+  margin: 5px 0px;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  transition: box-shadow ease-in-out 0.1s;
+}
+.card:hover {
+  box-shadow: 2px 0 0 2px rgba(154, 205, 50, 0.2);
+}
+.card img {
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+}
+.play-button {
+  color: transparent;
+  font-size: 0;
+}
+.card:hover .play-button {
+  width: 100%;
+  height: 65%;
+  position: relative;
+  top: -105%;
+  color: yellowgreen;
+  /* note that its opacity will be 0 normally */
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 30px;
+  padding-top: 15%;
+  text-align: center;
+  z-index: 5;
+  transition: all ease-in-out 0.1s;
+}
+
+.card p {
+  color: wheat;
+}
+.song-duration {
+  text-align: right;
+  padding-left: 7%;
+  position: absolute;
+}
+/* options is the class for the 3 dots which needs to be clicked to trigger the latest release drop down menu */
+/*option properties*/
+.option-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+.latest-dropdown {
+  position: absolute;
+  background-color: rgb(12, 15, 15);
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+  top: 20px;
+  right: 0px;
+  overflow: hidden;
+  z-index: 2;
+  border: 1px solid wheat;
+  box-shadow: 0px 0px 2px 1px black;
+  transition: all ease-in-out 0.3s;
+}
+.latest-dropdown p {
+  text-align: center;
+  font-size: 0.7rem;
+}
+.latest-dropdown p a {
+  text-align: center;
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: wheat;
+}
+.fa-ellipsis-h {
+  color: yellowgreen;
+  cursor: pointer;
+}
+/* this input is for the latest release drop down */
+input[type="checkbox"] {
+  display: none;
+}
+/* checking it, will trigger the latest release dropdown */
+input[type="checkbox"]:checked ~ .latest-dropdown {
+  width: max-content;
+  height: auto;
+  opacity: 1;
+  padding: 10px;
+}
+/*popular artists*/
+.popular-artists {
+  padding-top: 10vw;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.popular-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.popular-content img {
+  width: 10vw;
+  height: 10vw;
+  min-width: 70px;
+  min-height: 70px;
+  border-radius: 50%;
+}
+.popular-content a {
+  text-decoration: none;
+  color: blanchedalmond;
+}
+.popular-content p {
+  text-align: center;
+}
+/*music theme*/
+.music-theme {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(33, 49, 16),
+    rgb(56, 43, 20)
+  );
+}
+/*property of the station division*/
+.station {
+  margin: 30px 0px 30px 10px;
+}
+/*logo inside colour boxes*/
+.station img {
+  width: 60%;
+}
+/*div box descriptions*/
+#box-1 {
+  width: 12vw;
+  height: 8vh;
+  min-width: 80px;
+  min-height: 60px;
+  background-color: orangered;
+}
+#box-2 {
+  position: relative;
+  top: -1vw;
+  left: 1vw;
+  width: 10vw;
+  height: 10vh;
+  min-width: 70px;
+  min-height: 70px;
+  background-color: yellow;
+}
+#box-3 {
+  width: 8vw;
+  height: 13vh;
+  min-width: 60px;
+  min-height: 70px;
+  position: relative;
+  top: -1vw;
+  left: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+}
+.music-theme-content img {
+  width: 7vw;
+  height: 7vw;
+  min-width: 70px;
+  min-height: 70px;
+  border-radius: 50%;
+  z-index: 2;
+  margin: 5px;
+}
+.music-theme-content img:hover {
+  opacity: 0.3;
+}
+.theme-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.music-theme-content p {
+  text-align: center;
+  position: relative;
+  margin-top: -3vw;
+  color: transparent;
+}
+.music-theme-content:hover p {
+  text-align: center;
+  position: relative;
+  margin-top: -3vw;
+  color: yellowgreen;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+/*end of one music theme*/
+/*beginning of another music theme incl electronic*/
+.music-theme2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+.music-theme2::-webkit-scrollbar {
+  display: none;
+}
+.image-cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 33.3%;
+}
+.image-cont img:hover {
+  opacity: 0.3;
+  transform: scale(1.3);
+  transition: 0.5s ease-in-out;
+}
+.image-cont p {
+  position: relative;
+  margin-top: -3vw;
+  color: transparent;
+}
+.image-cont:hover p {
+  position: relative;
+  margin-top: -10vw;
+  margin-left: 5vw;
+  color: yellowgreen;
+  font-size: 2rem;
+  font-weight: bolder;
+  z-index: 4;
+  box-shadow: 2px 0 0 2px rgba(0, 0, 0, 0.2);
+}
+/*styling for latest released language based*/
+.language-based {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+.language-based h2 {
+  margin-top: 10%;
+}
+.language-based p {
+  color: wheat;
+  line-height: 1.5;
+}
+/*for latest english and hindi both songs*/
+/*using the same class to define properties because all the properties are same*/
+.latest-eng {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/*defining property for music cover*/
+.latest-eng img {
+  width: 10vw;
+  height: 10vw;
+  min-width: 80px;
+  min-width: 80px;
+}
+/*the second aside part begins here*/
+/*in order to bring the my playlist and queue in same 
+line the properties are being defined*/
+.part-2 {
+  border: 1px dotted greenyellow;
+}
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12%;
+}
+.heading a {
+  color: wheat;
+  font-size: 1.5rem;
+}
+/* these are the properties for the queue options box. the queue options box will be visible when one clicks on the queue button */
+.queue-options {
+  position: fixed;
+  right: 4%;
+  top: 140px;
+  width: 12%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgb(27, 26, 26);
+  overflow: hidden;
+  z-index: 5; /* to cover the heart icon */
+  opacity: 0;
+  transform: scale(0);
+  transition: all ease-in-out 0.25s;
+  border: 1px solid wheat;
+}
+#queue-option-box:target {
+  /* when the queue option box becomes target */
+  opacity: 1;
+  transform: scale(1);
+}
+.queue-options p {
+  text-align: center;
+}
+.numbering {
+  margin-left: 4px;
+  color: wheat;
+}
+/* playlist content */
+.playlist-content {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  cursor: pointer;
+}
+/* playlist content container scroll bar */
+.playlist-content::-webkit-scrollbar {
+  display: none;
+}
+/* left content contains the image, index and name of the song */
+.left-content {
+  display: flex;
+  height: 100%;
+  width: 70%;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-content > div:nth-child(3) {
+  margin-left: 12px;
+  width: 50%;
+  word-wrap: break-word;
+}
+/* right content contains the heart icon */
+.right-content {
+  position: relative;
+  bottom: 62%;
+  left: 90%;
+  width: min-content;
+  height: 20px;
+  color: white;
+  font-size: 20px;
+}
+.right-content i {
+  transition: all ease-in-out 0.1s;
+}
+.right-content i:hover {
+  color: green;
+}
+/* class for a partilcular item in playlist */
+.playlist-item {
+  width: 90%;
+  height: auto;
+  padding: 0px 1%;
+  box-sizing: border-box;
+  margin: 1%;
+}
+/* animation for glowing heart in each of the playlist items */
+@keyframes heart-glow {
+  0% {
+    color: yellow;
+  }
+  50% {
+    color: yellowgreen;
+  }
+  100% {
+    color: green;
+  }
+}
+/* hover effect on heart */
+.playlist-item:hover .fa-heart {
+  animation-name: heart-glow;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1s;
+}
+.left-content img {
+  height: 80px;
+  width: 80px;
+}
+.playlist-content p {
+  color: wheat;
+  line-height: 1.5;
+}
+
+.play {
+  margin-top: -40px;
+  text-align: center;
+  color: white;
+  transition: ease-in-out 0.1s;
+}
+
+/* playlist items hovering effect */
+.playlist-item img:hover {
+  opacity: 0.3;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 2px 1px white;
+}
+hr {
+  width: 90%;
+}
+/*the property definition for more button*/
+/*the more button will be displayed when the screen size is reduced*/
+label[for="more"] {
+  display: none;
+  position: absolute;
+  right: 0%;
+  top: 20%;
+  padding-bottom: 5px;
+  z-index: 4;
+  width: 70px;
+  font-size: 20px;
+  height: 25px;
+  text-align: center;
+  box-shadow: 0px 0px 2px 1px white;
+  background-image: linear-gradient(45deg, yellowgreen, green 150%);
+}
+/*when the input box is checked then the playlist will become visible
+otherwise it will remain hidden*/
+label[for="more"]:checked ~ input {
+  display: none;
+}
+/*this is the end of other aside part and the end of main part*/
+/*beginning of the music player at the bottom of the page*/
+footer {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: black;
+  bottom: 3px;
+  width: 100%;
+  height: 100px;
+}
+/*the music cover is kept at some distance from the bottom of the page*/
+footer img {
+  height: 80px;
+  width: 80px;
+  padding: 15px;
+}
+.footer-left-content {
+  display: flex;
+  flex-direction: row;
+}
+/*the properties for the names are defined*/
+footer p {
+  color: wheat;
+  font-size: 16px;
+  text-align: left;
+  padding-top: 15px;
+  line-height: 1.5;
+}
+/*properties for like and ban icon*/
+.like-ban {
+  padding-top: 30px;
+  font-size: 30px;
+  transition: ease-in-out 0.5s;
+}
+.ban {
+  color: lightgrey;
+  padding: 0px 50px 0px 5px;
+}
+.like {
+  color: white;
+  padding: 0px 5px 0px 5px;
+}
+/*when the icons are hovered the colours of both of them change*/
+.ban:hover {
+  color: red;
+}
+.like:hover {
+  cursor: pointer;
+  color: lime;
+}
+/*properties of music player*/
+.music-player {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+/*properties of the music controls*/
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 25px;
+  font-size: 30px;
+  width: 50%;
+  color: white;
+}
+.controls div {
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+/*properties for the music slider*/
+.music-slider {
+  width: 100%;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-top: -10px;
+  color: green;
+}
+.controls div:hover {
+  color: lightgray;
+}
+/*property of slider container*/
+.slidercontainer {
+  width: 50%;
+}
+/* this is the song-duration slider */
+#slider {
+  width: 100%;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: -5px;
+}
+/*defining the properties for song duration*/
+.initial,
+.final {
+  padding: 10px;
+  color: wheat;
+}
+/*properties for the volume slider and other options */
+.extras {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  justify-content: space-between;
+  color: white;
+  font-size: 30px;
+}
+.expand {
+  padding-left: 80px;
+  padding-top: 30px;
+  color: white;
+  font-size: 30px;
+}

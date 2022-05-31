@@ -1,0 +1,153 @@
+/*basic properties of the card of the band description*/
+.band-card {
+  margin: 10px;
+  background-image: linear-gradient(to top right, rgb(38, 58, 44), grey);
+  height: 55vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+/*jeight and width of the image of band*/
+.band-card img {
+  height: 100%;
+  width: 50%;
+}
+/*changes for lower resolutions*/
+@media screen and (max-width: 768px) {
+  .band-card img {
+    width: 100%;
+  }
+  .band-card {
+    height: auto;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .band-card h3 {
+    display: none;
+  }
+}
+/*property for band name*/
+.band-name {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+h2 {
+  color: wheat;
+}
+.btn {
+  padding: 10px;
+}
+/*css property definition for play all and follow button*/
+button {
+  background-image: linear-gradient(to bottom left, yellowgreen, green);
+  padding: 10px;
+  border: 1px solid white;
+}
+button:hover {
+  background-color: mediumspringgreen;
+  color: white;
+}
+/*definition of song cards in playlist*/
+.song-card {
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient(
+    to top right,
+    rgba(38, 58, 44, 0.2),
+    rgba(128, 128, 128, 0.2)
+  );
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+/*the padding and color for the name of song and artist*/
+.song-card p {
+  color: gray;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+/*property for image in the song card*/
+.song-card img {
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+}
+/*changes in the card when hovered*/
+.song-img img:hover {
+  opacity: 0.3;
+  box-shadow: 0 2px 2px 0 rgba(250, 246, 246, 0.2);
+}
+.song-img-desc {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+}
+.center-right {
+  padding-top: 25px;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #ccc;
+}
+/*the row display of the like and plus icon*/
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+/*for the change in colour when hovered*/
+.right:hover {
+  color: greenyellow;
+}
+/*properties for lower resolutions*/
+@media screen and (max-width: 768px) {
+  .center {
+    color: transparent;
+  }
+}
+/*card definition of similar artist*/
+.similar-card {
+  width: 95%;
+  height: 100px;
+  border: 1px dashed chartreuse;
+  margin: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*similar artist image*/
+.similar-card img {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+}
+
+.similar-content {
+  overflow: auto;
+}
+.similar-content::-webkit-scrollbar {
+  display: none;
+}
+/*the similar artists section and recently played both are 
+scrollable*/
+/*the similar card descrition properties*/
+.similar-desc {
+  padding-top: 8px;
+}
+.similar-card h3 {
+  font-size: 16px;
+  color: whitesmoke;
+}
+.similar-card p {
+  font-size: 14px;
+  color: gray;
+}
+/*the ellipsis icon and duration property*/
+.similar-right {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}

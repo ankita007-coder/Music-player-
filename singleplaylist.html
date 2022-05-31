@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--the css stylesheet of the main page is used to avoid repition of the definition of basic
+    structure again-->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <!--the playlist css stylesheet contains the extra class and divisions created 
+    in this page and is mentioned at the last to override the prev properties wherever necessary-->
+    <link rel="stylesheet" href="playlist.css" />
+    <script
+      src="https://kit.fontawesome.com/2d9b67a497.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Single Playlist Screen</title>
+  </head>
+  <body>
+    <!--this is for navigation bar-->
+    <header>
+      <nav class="navigation">
+        <div class="logo">
+          <!--on clicking the logo the user will be directed to home page-->
+          <a href="index.html"> <img src="images/logo.png" /></a>
+        </div>
+        <div class="fav">
+          <a href="">Favourites</a>
+        </div>
+        <div class="search-bar">
+          <div class="search-icon">
+            <i class="fas fa-search search-ico"></i>
+          </div>
+
+          <input type="text" placeholder="Search.." />
+          <div class="mic">
+            <!-- mic icon -->
+            <i class="fas fa-microphone mic-ico"></i>
+          </div>
+        </div>
+        <div class="notification">
+          <div class="red-dot"></div>
+          <i class="fas fa-solid fa-bell" style="color: aliceblue;"></i>
+        </div>
+        <div class="profile">
+          <img src="images/profile.webp" alt="profile" />
+        </div>
+      </nav>
+    </header>
+    <!--the main body starts with the definition of two asides-->
+    <!--first aside-->
+    <main>
+      <aside class="aside part-1">
+        <!--the band card at the top of the page-->
+        <div class="band-card">
+          <img src="images/singleplaylist/1d.jpg" />
+          <div class="band-des">
+            <div class="band-name">
+              <h2 style="font-size: 2rem; padding: 0 10px;">One Direction</h2>
+              <p>19M Followers</p>
+            </div>
+            <h3 style="padding: 0 10px;">English-Irish band</h3>
+            <p style="padding: 0px 10px; line-height: 1.5;">
+              One Direction, often shortened to 1D, are an English-Irish pop boy
+              band formed in London, England in 2010.The group are composed of
+              Niall Horan, Liam Payne, Harry Styles and Louis Tomlinson; Zayn
+              Malik left the group in March 2015.
+            </p>
+
+            <div class="btn">
+              <button>Play All</button>
+              <button>Follow</button>
+            </div>
+            <div class="count">
+              <p style="padding: 10px; color: wheat;">5 Albums | 91 Tracks</p>
+            </div>
+          </div>
+        </div>
+        <!--beginning of the song cards playlist-->
+        <!--first song card-->
+        <div class="song-card">
+          <p>01</p>
+          <div class="song-img-desc">
+            <div class="song-img">
+            <img src="images/playlist/play-2.png" alt="" srcset=""></div>
+           <div class="song-name"><p>Attention<br>
+        Charlie Puth</p></div> 
+           </div>
+           <div class="center-right">
+            <div class="center">
+              3:14
+          </div>
+          <div class="right">
+              <div class="like">
+                  <i class="far fa-heart"></i>
+              </div>
+              <div class="plus">
+                  <i class="fas fa-plus"></i>
+              </div>
+          </div>
+        </div>
+          </div>
+          <!--second song card-->
+        <div class="song-card">
+          <p>03</p>
+          <div class="song-img-desc">
+            <div class="song-img">
+            <img src="images/latest/latest3.jpg" alt="" srcset=""></div>
+           <div class="song-name"><p>Peaches<br>
+      Justin Bieber</p></div> 
+           </div>
+           <div class="center-right">
+            <div class="center">
+          </div>
+          <div class="right">
+              <div class="like">
+                  <i class="far fa-heart"></i>
+              </div>
+              <div class="plus">
+                  <i class="fas fa-plus"></i>
+              </div>
+          </div>
+        </div>
+          </div>
+<!--third song card-->
+<div class="song-card">
+  <p>03</p>
+  <div class="song-img-desc">
+    <div class="song-img">
+    <img src="images/latest/latest4.jpg" alt="" srcset=""></div>
+   <div class="song-name"><p>Willow<br>
+Taylor Swift</p></div> 
+   </div>
+   <div class="center-right">
+    <div class="center"> 
+  </div>
+  <div class="right">
+      <div class="like">
+          <i class="far fa-heart"></i>
+      </div>
+      <div class="plus">
+          <i class="fas fa-plus"></i>
+      </div>
+  </div>
+</div>
+  </div>
+
+<!--fourth song card-->
+<div class="song-card">
+  <p>04</p>
+  <div class="song-img-desc">
+    <div class="song-img">
+    <img src="images/latest/latest6.jpg" alt="" srcset=""></div>
+   <div class="song-name"><p>26<br>
+Lauv</p></div> 
+   </div>
+   <div class="center-right">
+    <div class="center">
+  </div>
+  <div class="right">
+      <div class="like">
+          <i class="far fa-heart"></i>
+      </div>
+      <div class="plus">
+          <i class="fas fa-plus"></i>
+      </div>
+  </div>
+</div>
+  </div>
+<!--fifth song card-->
+<div class="song-card">
+  <p>05</p>
+  <div class="song-img-desc">
+    <div class="song-img">
+    <img src="images/perfect.jpg" alt="" srcset=""></div>
+   <div class="song-name"><p>Perfect<br>
+Ed Sheeran</p></div> 
+   </div>
+   <div class="center-right">
+    <div class="center">
+  </div>
+  <div class="right">
+      <div class="like">
+          <i class="far fa-heart"></i>
+      </div>
+      <div class="plus">
+          <i class="fas fa-plus"></i>
+      </div>
+  </div>
+</div>
+  </div>
+<!--sixth song card-->
+<div class="song-card">
+  <p>06</p>
+  <div class="song-img-desc">
+    <div class="song-img">
+    <img src="images/believer.jpg" alt="" srcset=""></div>
+   <div class="song-name"><p>Believer<br>
+Imagine Dragons</p></div> 
+   </div>
+   <div class="center-right">
+    <div class="center">
+  </div>
+  <div class="right">
+      <div class="like">
+          <i class="far fa-heart"></i>
+      </div>
+      <div class="plus">
+          <i class="fas fa-plus"></i>
+      </div>
+  </div>
+</div>
+  </div>
+      </aside>
+      <!--end of the first aside-->
+      <!--this is second part of aside and will only be visible at high resolutions-->
+      <!--at lower resolutions it'll be replaced by more button-->
+      <label for="more"><i class="fas fa-angle-double-left"></i>More</label>
+      <!--the label is declared to mark More for the checkbox...the checkbox will remain hidden the whole time-->
+      <input type="checkbox" id="more" />
+      <!--the second aside part is declared-->
+      <aside class="aside part-2">
+          <div class="heading">
+              <!--the heading of this side-->
+        <!--Similar Artists songs-->
+        <h2 style="color:chartreuse">Similar Artists</h2>
+        <h4 style="color:gray">View all</h4>
+          </div>
+          <div class="similar-content" style="height:20vh;">
+            <!--first card for similar artists-->
+          <div class="similar-card">
+            <div class="coverer">
+              <img src="images/artist-1.jpg" alt="" srcset="">
+            </div>
+            <div class="similar-desc">
+              <h3>Imagine Dragons</h3>
+              <p>Pop Band</p>
+            </div>
+            <div class="similar-right">
+              <div>
+                <i class="fas fa-ellipsis-h"></i></div>
+                <div class="dur">
+                  <p>4:44</p>
+                </div>
+            </div>
+          </div>
+          <!--second card for similar artists-->
+          <div class="similar-card">
+              <div class="coverer">
+                  <img src="images/coldplay.jpg" alt="" srcset="">
+                </div>
+                <div class="similar-desc">
+                  <h3>Cold Play</h3>
+                  <p>Rock Band</p>
+                </div>
+                <div class="similar-right">
+                  <div>
+                    <i class="fas fa-ellipsis-h"></i></div>
+                    <div class="dur">
+                      <p>3:04</p>
+                    </div>
+    
+                </div>    
+            </div>
+            <!--thord card for similar artists-->
+            <div class="similar-card">
+                <div class="coverer">
+                    <img src="images/beatles.jpg" alt="" srcset="">
+                  </div>
+                  <div class="similar-desc">
+                    <h3>The Beatles</h3>
+                    <p>Rock Band</p>
+                  </div>
+                  <div class="similar-right">
+                    <div>
+                      <i class="fas fa-ellipsis-h"></i></div>
+                      <div class="dur">
+                        <p>4:07</p>
+                      </div>
+      
+                  </div>      
+              </div>
+            </div>
+        <!--end of similar artists-->
+        <!--beginning of recently played songs-->
+          <div class="heading">
+              <!--the heading of this side-->
+        <!--Recently played songs-->
+        <h2 style="color:chartreuse">Recently Played</h2>
+        <h4 style="color:gray">View all</h4>
+          </div>
+          <div class="playlist-content" style="height:30vh;">
+              <!--first item of the playlist-->
+              <div class="playlist-item">
+                <div class="left-content">
+                  <div class="numbering">
+                    01
+                  </div>
+                  <div class="cover">
+                      <!-- cover class is for those items which when hovered will show an effect -->
+                      <!-- in this effect, when the user hovers on the item, it will show blur background -->
+                      <!-- with opacity value less than 1 and a play button icon at the center -->                                
+                      <img src="images/playlist/play-1.jpg">
+                      <div class="play">
+                          <i class="fas fa-play"></i>
+                      </div>
+                  </div>
+                  <!-- name and author of the song -->
+                  <div>
+                    
+                      <p>
+                        Alone<br>
+                          Alan Walker
+                      </p>
+                  </div>
+              </div>
+              <!-- like button -->
+              <div class="right-content">
+                <i class="fas fa-solid fa-heart"></i>
+              </div>
+    
+              
+            </div>
+            <!--second item of the playlist-->
+            <div class="playlist-item">
+              <div class="left-content">
+                <div class="numbering">
+                  02
+                </div>
+                <div class="cover">
+                    <!-- cover class is for those items which when hovered will show an effect -->
+                    <!-- in this effect, when the user hovers on the item, it will show blur background -->
+                    <!-- with opacity value less than 1 and a play button icon at the center -->                                
+                    <img src="images/latest/latest1.jpg">
+                    <div class="play">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <!-- name and author of the song -->
+                <div>
+                  
+                    <p>
+                    Light Switch<br>
+                        Charlie Puth
+                    </p>
+                </div>
+            </div>
+            <!-- like button -->
+            <div class="right-content">
+              <i class="fas fa-solid fa-heart"></i>
+            </div>      
+          </div>
+      <!--third item of the playlist-->
+      <div class="playlist-item">
+        <div class="left-content">
+          <div class="numbering">
+            03
+          </div>
+          <div class="cover">
+              <!-- cover class is for those items which when hovered will show an effect -->
+              <!-- in this effect, when the user hovers on the item, it will show blur background -->
+              <!-- with opacity value less than 1 and a play button icon at the center -->                                
+              <img src="images/latest/latest3.jpg">
+              <div class="play">
+                  <i class="fas fa-play"></i>
+              </div>
+          </div>
+          <!-- name and author of the song -->
+          <div>
+            
+              <p>
+            Peaches<br>
+                Justin Bieber
+              </p>
+          </div>
+      </div>
+      <!-- like button -->
+      <div class="right-content">
+        <i class="fas fa-solid fa-heart"></i>
+      </div>      
+    </div>
+      <!--fourth item of the playlist-->
+      <div class="playlist-item">
+        <div class="left-content">
+          <div class="numbering">
+            04
+          </div>
+          <div class="cover">
+              <!-- cover class is for those items which when hovered will show an effect -->
+              <!-- in this effect, when the user hovers on the item, it will show blur background -->
+              <!-- with opacity value less than 1 and a play button icon at the center -->                                
+              <img src="images/playlist/play-2.png">
+              <div class="play">
+                  <i class="fas fa-play"></i>
+              </div>
+          </div>
+          <!-- name and author of the song -->
+          <div>
+            
+              <p>
+              Attention<br>
+                  Charlie Puth
+              </p>
+          </div>
+      </div>
+      <!-- like button -->
+      <div class="right-content">
+        <i class="fas fa-solid fa-heart"></i>
+      </div>      
+    </div>
+      <!--fifth item of the playlist-->
+      <div class="playlist-item">
+        <div class="left-content">
+          <div class="numbering">
+            05
+          </div>
+          <div class="cover">
+              <!-- cover class is for those items which when hovered will show an effect -->
+              <!-- in this effect, when the user hovers on the item, it will show blur background -->
+              <!-- with opacity value less than 1 and a play button icon at the center -->                                
+              <img src="images/latest/latest6.jpg">
+              <div class="play">
+                  <i class="fas fa-play"></i>
+              </div>
+          </div>
+          <!-- name and author of the song -->
+          <div>
+            
+              <p>
+              26<br>
+                  Lauv
+              </p>
+          </div>
+      </div>
+      <!-- like button -->
+      <div class="right-content">
+        <i class="fas fa-solid fa-heart"></i>
+      </div>      
+    </div>
+    
+      </aside>
+    </main>
+    <!--the end of main page-->
+    <!--the bottom of the page containing the music player-->
+    <footer>
+      <!--the left content contains the music cover of the song
+        and the name of the song and artist-->
+      <div class="footer-left-content">
+        <div>
+          <img src="images/playlist/play-1.jpg" />
+        </div>
+        <div class="active-song-desc">
+          <p>Alone<br />Alan Walker</p>
+        </div>
+      </div>
+      <!--this division contains the heart and ban icon-->
+      <div class="like-ban">
+        <span class="like">
+          <i class="fas fa-solid fa-heart"></i>
+        </span>
+        <span class="ban">
+          <i class="fas fa-ban"></i>
+        </span>
+      </div>
+      <!--this part contain the music player and controls-->
+      <div class="music-player">
+        <div class="controls">
+          <div><i class="fas fa-random"></i></div>
+          <div><i class="fas fa-step-backward"></i></div>
+          <div><i class="fas fa-pause-circle"></i></div>
+          <div><i class="fas fa-step-forward"></i></div>
+          <div><i class="fas fa-redo"></i></div>
+        </div>
+        <div class="music-slider">
+          <div class="initial">
+            0:17
+          </div>
+          <div class="slidercontainer">
+            <input type="range" name="" id="slider" min="0" max="100" />
+          </div>
+          <div class="final">
+            2:40
+          </div>
+        </div>
+      </div>
+      <div class="extras">
+        <div>
+          <i class="fas fa-list-ul"></i>
+        </div>
+        <div>
+          <i class="fas fa-laptop"></i>
+        </div>
+        <div>
+          <i class="fas fa-volume-up"></i>
+        </div>
+        <div class="slidecontainer" style="width: 30%;">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            class="slider"
+            id="myRange"
+            style="margin-top: 0px;"
+          />
+        </div>
+       
+      </div>
+      <div class="expand">
+          <i class="fas fa-expand-alt"></i>
+        </div>
+    </footer>
+  </body>
+</html>
